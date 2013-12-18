@@ -1,4 +1,4 @@
-package net.darkglass.sacchar 
+package net.darkglass.FlxFrob
 {
 	import flash.utils.Dictionary;
 	import org.flixel.FlxBasic;
