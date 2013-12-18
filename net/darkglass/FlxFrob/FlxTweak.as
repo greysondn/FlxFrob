@@ -1,4 +1,4 @@
-package net.darkglass.sacchar 
+package net.darkglass.FlxFrob
 {
 	import org.flixel.FlxBasic;
 	import org.flixel.FlxG;
