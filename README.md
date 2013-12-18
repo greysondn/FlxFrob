@@ -3,11 +3,7 @@ FlxFrob
 
 Aimlessly finetune and benchmark your Flixel-based projects!
 
-v0.1
-WIP
-* Add source files
-* Fix nuances in readme
-* Touch changelog
+v0.1 (17 December 2013) - "Touch me, babe"
 
 Purpose
 -------
