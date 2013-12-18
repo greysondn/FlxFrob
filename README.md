@@ -3,9 +3,11 @@ FlxFrob
 
 Aimlessly finetune and benchmark your Flixel-based projects!
 
-v0.00  
-17 December 2013
-Init repository, write README
+v0.1
+WIP
+* Add source files
+* Fix nuances in readme
+* Touch changelog
 
 Purpose
 -------
@@ -14,10 +16,13 @@ The purpose comes from the word "frobnicate" - to twiddle or adjust aimlessly - 
 
 I don't promise it to be good or particularly useful. It just seems like it solves the "need to tweak this at runtime" problem. Make sure to check the button bindings; better alternative solutions are on the way but these things take time and this can be useful now.
 
-Other Notes
------------
+Usage
+-----
 
-None, really. It's quite a freshman effort, but I wanted to see if I couldn't give something back other than my aimless desire to help and code that gets broken by updates. The flixel-community has been nothing but kind to me - well, the maintainers, anyway.
+Chalk this up to missing docs I need to write, hm?
+
+You will need Flixel on your buildpath to use the classes from this project.
+
 
 Backstory
 -------

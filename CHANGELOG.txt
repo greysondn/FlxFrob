@@ -1,0 +1,12 @@
+0.1 (WIP)
+---------
+
+* Add Source files (FlxProfiler, FlxTweak)
+* Fix Nuances in README
+* Touch changelog
+
+0.00 (17 Dec 2013)
+------------------
+
+* Init repository
+* write README
