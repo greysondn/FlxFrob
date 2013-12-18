@@ -1,9 +1,10 @@
-0.1 (WIP)
+0.1 (17 Dec 2013)
 ---------
 
 * Add Source files (FlxProfiler, FlxTweak)
 * Fix Nuances in README
 * Touch changelog
+* Fix Package declarations in source files
 
 0.00 (17 Dec 2013)
 ------------------
