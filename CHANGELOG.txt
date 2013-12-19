@@ -1,5 +1,10 @@
-0.1 (17 Dec 2013)
----------
+0.2.0 - "Repair It, Any Way You Can" (WIP)
+------------------------------------------
+
+* Move ./net/ folder to ./net/src
+
+0.1.0 - "Touch Me, Babe" (17 Dec 2013)
+--------------------------------------
 
 * Add Source files (FlxProfiler, FlxTweak)
 * Fix Nuances in README
