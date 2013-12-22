@@ -5,7 +5,7 @@ package net.darkglass.FlxFrob
 
 	CONFIG::debug
 	{
-		import net.darkglass.sacchar.FlxProfiler;
+		import net.darkglass.FlxFrob.FlxProfiler;
 	}
 	
 	/**
@@ -175,7 +175,7 @@ class _Node
 {
 	CONFIG::debug
 	{
-		import net.darkglass.sacchar.FlxProfiler;
+		import net.darkglass.FlxFrob.FlxProfiler;
 	}
 	
 	/**
