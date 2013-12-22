@@ -2,11 +2,6 @@ package net.darkglass.FlxFrob
 {
 	import org.flixel.FlxBasic;
 	import org.flixel.FlxG;
-
-	CONFIG::debug
-	{
-		import net.darkglass.FlxFrob.FlxProfiler;
-	}
 	
 	/**
 	 * <p>Class that helps with tweaking variables during creation of game.</p>
@@ -37,12 +32,7 @@ package net.darkglass.FlxFrob
 		 * @since Sacchar b5r1
 		 */
 		private function doAdjustmentsNumber(node:_Node):void
-		{
-			CONFIG::debug
-			{
-				FlxProfiler.enter("FlxTweak:doAdjustmentsNumber()");
-			}
-			
+		{	
 			if (FlxG.keys.pressed(node.character))
 			{
 				if (FlxG.keys.justPressed("ONE"))
@@ -77,22 +67,12 @@ package net.darkglass.FlxFrob
 				{
 					node.object[node.variable] += 10;
 				}
-			}
-			
-			CONFIG::debug
-			{
-				FlxProfiler.exit();
-			}
-			
+			}			
 		}
 		
 		public function FlxTweak() 
 		{
-			CONFIG::debug
-			{
-				FlxProfiler.enter("FlxTweak:*constructor");
-			}
-			
+			// parent constructor
 			super();
 			
 			// enable
@@ -100,33 +80,17 @@ package net.darkglass.FlxFrob
 			
 			// init our vector
 			tweakNodes = new Vector.<_Node>();
-			
-			CONFIG::debug
-			{
-				FlxProfiler.exit();
-			}
 		}
 		
 		override public function update():void 
 		{
-			CONFIG::debug
-			{
-				FlxProfiler.enter("FlxTweak:update()");
-			}
-			
-			// parent first
+			// parent
 			super.update();
-
+			
 			// iterate through the tweaknodes and do adjustments on each one
 			for (var i:int = 0; i < tweakNodes.length; ++i)
 			{
 				doAdjustmentsNumber(tweakNodes[i]);
-			}
-			
-			
-			CONFIG::debug
-			{
-				FlxProfiler.exit();
 			}
 		}
 		
@@ -140,12 +104,6 @@ package net.darkglass.FlxFrob
 		 */
 		public function add(character:String, object:Object, variable:String, name:String = null):void
 		{
-			
-			CONFIG::debug
-			{
-				FlxProfiler.enter("FlxTweak:add()");
-			}
-			
 			// create a new node from the given entries
 			var swap:_Node = new _Node(character, object, variable);
 			
@@ -157,12 +115,6 @@ package net.darkglass.FlxFrob
 			{
 				FlxG.watch(object, variable, (character + ": " + name));
 			}
-			
-			CONFIG::debug
-			{
-				FlxProfiler.exit();
-			}
-			
 		}
 	}
 }
@@ -173,11 +125,6 @@ package net.darkglass.FlxFrob
  */
 class _Node
 {
-	CONFIG::debug
-	{
-		import net.darkglass.FlxFrob.FlxProfiler;
-	}
-	
 	/**
 	 * <p>Character used to adjust variable.</p>
 	 */
@@ -203,19 +150,8 @@ class _Node
 	 */
 	public function _Node(c:String, o:Object, v:String)
 	{
-		
-		CONFIG::debug
-		{
-			FlxProfiler.enter("FlxTweak:_Node:*constructor");
-		}
-		
 		character = c;
 		object    = o;
 		variable  = v;
-		
-		CONFIG::debug
-		{
-			FlxProfiler.exit();
-		}
 	}
 }
