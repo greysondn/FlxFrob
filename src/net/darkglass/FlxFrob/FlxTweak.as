@@ -1,7 +1,7 @@
 package net.darkglass.FlxFrob
 {
-	import org.flixel.FlxBasic;
-	import org.flixel.FlxG;
+	import flixel.FlxBasic;
+	import flixel.FlxG;
 	
 	/**
 	 * <p>Class that helps with tweaking variables during creation of game.</p>
