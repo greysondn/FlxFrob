@@ -86,11 +86,13 @@ package net.darkglass.FlxFrob
 		{
 			// parent
 			super.update();
-			
-			// iterate through the tweaknodes and do adjustments on each one
-			for (var i:int = 0; i < tweakNodes.length; ++i)
+			if (enabled)
 			{
-				doAdjustmentsNumber(tweakNodes[i]);
+				// iterate through the tweaknodes and do adjustments on each one
+				for (var i:int = 0; i < tweakNodes.length; ++i)
+				{
+					doAdjustmentsNumber(tweakNodes[i]);
+				}
 			}
 		}
 		
@@ -111,7 +113,7 @@ package net.darkglass.FlxFrob
 			tweakNodes.push(swap);
 			
 			// if we need to add to watchlist...
-			if (null != name)
+			if (null != name && enabled)
 			{
 				FlxG.watch(object, variable, (character + ": " + name));
 			}
